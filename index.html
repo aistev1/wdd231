@@ -1,50 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 231 - Web Frontend Development Course Home Page">
-    <meta name="author" content="Your Name">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="WDD 231 - Web Frontend Development Course Home Page" />
+    <meta name="author" content="Your Name" />
     <title>WDD 231 - Course Home Page</title>
-    
+
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
+
     <!-- CSS Files -->
-    <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/larger.css">
-    
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+
     <!-- JavaScript Files -->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
     <script src="scripts/course.js" defer></script>
 </head>
+
 <body>
     <header>
         <div class="header-content">
-            <img src="images/logo.svg" alt="Site Logo" class="logo">
-            <span class="name">Your Name</span>
+            <img src="images/logo.svg" alt="Site Logo" class="logo" />
+            <span class="name">Stephen Isiko</span>
             <button class="hamburger" aria-label="Toggle navigation">☰</button>
         </div>
-            <nav>
-        <ul class="navigation">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="chamber.html">Chamber</a></li>
-            <li><a href="final.html">Final</a></li>
-        </ul>
-    </nav>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="chamber.html">Chamber</a></li>
+                <li><a href="final.html">Final</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
         <h1>Home</h1>
-        
+
         <section class="about">
-            <h2>About Me</h2>
             <div class="about-content">
-                <img src="images/profile.jpg" alt="Your Profile Picture" class="profile-img">
+                <h2>About Me</h2>
                 <p>Your introduction and background information...</p>
+            </div>
+            <div class="about-pic">
+                <h2>Student Photo</h2>
+                <img src="images/profile.jpg" alt="Your Profile Picture" class="profile-img" />
             </div>
         </section>
 
@@ -83,11 +88,14 @@
             </a>
             <!-- Add other social media links -->
         </div>
-        
+
         <div class="footer-info">
-            <p>&copy; <span id="currentyear"></span> | Your Name | Your State/Country</p>
+            <p>
+                &copy; <span id="currentyear"></span> | Your Name | Your State/Country
+            </p>
             <p id="lastModified"></p>
         </div>
     </footer>
 </body>
+
 </html>
