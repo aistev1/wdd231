@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #2c3e50;
-    --secondary-color: #3498db;
+    --primary-color: #ffff;
+    --secondary-color: #000000;
     --accent-color: #e74c3c;
     --text-color: #333;
     --background-color: #f8f9fa;
@@ -23,7 +23,7 @@ body {
 /* Header Styles */
 header {
     background-color: var(--primary-color);
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 1rem;
 }
 
@@ -97,8 +97,11 @@ main {
     padding: 1rem;
 }
 
-h1, h2 {
+h2 {
     color: var(--primary-color);
+}
+h1 {
+    color: #000000;
 }
 
 /* Course Cards */
@@ -122,7 +125,9 @@ h1, h2 {
 }
 
 .filter-buttons {
-    display: flex;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    justify-content: space-around;
     gap: 0.5rem;
     margin-bottom: 1rem;
 }
@@ -139,17 +144,27 @@ h1, h2 {
 .filter-buttons button:hover {
     background-color: var(--primary-color);
 }
+.credits-total{
+    text-align: center;
+}
 
 /* Footer */
 footer {
-    background-color: var(--primary-color);
-    color: white;
+    background-color: rgb(109, 112, 89);
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 2rem 1rem;
 }
 
 .social-links {
     margin-bottom: 1rem;
+    display: flex;
+    gap: 9px;
+    align-items: center;
+    justify-content: center;
+}
+.social-links img{
+ width: 60px;
 }
 
 .social-links a {
@@ -158,12 +173,7 @@ footer {
     text-decoration: none;
 }
 
-.social-links svg {
-    width: 24px;
-    height: 24px;
-    fill: currentColor;
-}
 .about h2{
-    background-color: #333;
+    /* background-color: #333; */
     color: #f8f9fa;
 }
