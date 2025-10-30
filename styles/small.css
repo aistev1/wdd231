@@ -129,6 +129,9 @@ h1 {
     justify-items: center;
     text-align: center;
 }
+.about-paragraph{
+    color: s#ffffff;
+}
 
 .profile-img {
     max-width: 150px;
