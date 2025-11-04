@@ -67,7 +67,6 @@
         max-width: 150px;
     }
 
-    /* Member Cards - Tablet */
     .cards-container {
         padding: 2rem;
     }
@@ -82,7 +81,7 @@
     }
 
     .list-view .member-image {
-        display: block;
+        display: none;
         height: 120px;
     }
 }
