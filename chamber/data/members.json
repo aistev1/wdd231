@@ -1,0 +1,79 @@
+[
+    {
+        "name": "Sahara Trade Imports",
+        "address": "45 Market Square, Timbuktu Central",
+        "phone": "(555) 234-5678",
+        "email": "contact@saharatrade.tk",
+        "website": "https://saharatrade.example.com",
+        "image": "1.jpg",
+        "membershipLevel": 3,
+        "description": "Premium import/export services connecting Timbuktu with global markets",
+        "hours": "Mon-Fri: 8AM-6PM, Sat: 9AM-2PM"
+    },
+    {
+        "name": "Timbuktu Tech Solutions",
+        "address": "12 Innovation Drive, Tech Park",
+        "phone": "(555) 345-6789",
+        "email": "support@timbuktutech.tk",
+        "website": "https://timbuktutech.example.com",
+        "image": "2.jpg",
+        "membershipLevel": 2,
+        "description": "Comprehensive IT services and digital transformation solutions",
+        "hours": "24/7 Support Available"
+    },
+    {
+        "name": "Desert Bloom Cafe",
+        "address": "8 Oasis Lane, Downtown Timbuktu",
+        "phone": "(555) 456-7890",
+        "email": "hello@desertbloom.tk",
+        "website": "https://desertbloom.example.com",
+        "image": "3.jpg",
+        "membershipLevel": 1,
+        "description": "Artisan coffee and local cuisine in a welcoming atmosphere",
+        "hours": "Daily: 6AM-10PM"
+    },
+    {
+        "name": "Golden Dunes Construction",
+        "address": "23 Builder's Way, Industrial Zone",
+        "phone": "(555) 567-8901",
+        "email": "projects@goldendunes.tk",
+        "website": "https://goldendunes.example.com",
+        "image": "4.jpg",
+        "membershipLevel": 3,
+        "description": "Leading construction and infrastructure development company",
+        "hours": "Mon-Sat: 7AM-5PM"
+    },
+    {
+        "name": "Nile River Logistics",
+        "address": "78 Transport Avenue, Logistics Hub",
+        "phone": "(555) 678-9012",
+        "email": "shipping@nileriver.tk",
+        "website": "https://nileriver.example.com",
+        "image": "5.jpg",
+        "membershipLevel": 2,
+        "description": "Efficient supply chain and transportation services across West Africa",
+        "hours": "24/7 Operations"
+    },
+    {
+        "name": "Tuareg Textile Arts",
+        "address": "34 Cultural Heritage Street",
+        "phone": "(555) 789-0123",
+        "email": "art@tuaregtextiles.tk",
+        "website": "https://tuaregtextiles.example.com",
+        "image": "6.jpg",
+        "membershipLevel": 1,
+        "description": "Traditional and contemporary textile designs preserving local heritage",
+        "hours": "Mon-Sat: 9AM-7PM, Sun: 11AM-5PM"
+    },
+    {
+        "name": "Mansa Musa Financial Services",
+        "address": "1 Finance Plaza, Business District",
+        "phone": "(555) 890-1234",
+        "email": "banking@mansamusa.tk",
+        "website": "https://mansamusa.example.com",
+        "image": "7.jpg",
+        "membershipLevel": 3,
+        "description": "Comprehensive banking and investment solutions for businesses and individuals",
+        "hours": "Mon-Fri: 8:30AM-4:30PM"
+    }
+]

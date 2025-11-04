@@ -1,0 +1,181 @@
+/* Tablet Styles (≥ 768px) */
+@media only screen and (min-width: 768px) {
+    /* Header - Tablet */
+    .header-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+
+    .logo-container {
+        margin-bottom: 0;
+    }
+
+    .title-container h1 {
+        font-size: 1.6rem;
+    }
+
+    /* Navigation - Tablet */
+    #menu-button {
+        display: none;
+    }
+
+    .nav-menu {
+        display: flex !important;
+        gap: 0.5rem;
+        background: none;
+        margin-top: 0;
+    }
+
+    .nav-menu li {
+        border-bottom: none;
+    }
+
+    .nav-menu li a {
+        padding: 0.75rem 1rem;
+        border-radius: 5px;
+        font-weight: 500;
+    }
+
+    /* Hero Banner - Tablet */
+    .hero-banner {
+        padding: 4rem 2rem;
+    }
+
+    .hero-content h2 {
+        font-size: 2.5rem;
+    }
+
+    /* Directory Controls - Tablet */
+    .directory-controls {
+        padding: 2rem;
+    }
+
+    .controls-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .view-toggle {
+        gap: 1rem;
+    }
+
+    .view-btn {
+        max-width: 150px;
+    }
+
+    /* Member Cards - Tablet */
+    .cards-container {
+        padding: 2rem;
+    }
+
+    .grid-view {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+
+    .list-view .member-card {
+        grid-template-columns: 1fr 2fr;
+        align-items: start;
+    }
+
+    .list-view .member-image {
+        display: block;
+        height: 120px;
+    }
+}
+
+/* Desktop Styles (≥ 1024px) */
+@media only screen and (min-width: 1024px) {
+    /* Header - Desktop */
+    .header-top {
+        padding: 1.5rem 3rem;
+    }
+
+    .logo {
+        height: 60px;
+    }
+
+    .title-container h1 {
+        font-size: 2rem;
+    }
+
+    .tagline {
+        font-size: 1rem;
+    }
+
+    /* Navigation - Desktop */
+    .nav-menu {
+        gap: 1rem;
+    }
+
+    .nav-menu li a {
+        padding: 1rem 1.5rem;
+        font-size: 1.1rem;
+    }
+
+    /* Hero Banner - Desktop */
+    .hero-banner {
+        padding: 6rem 3rem;
+    }
+
+    .hero-content h2 {
+        font-size: 3rem;
+    }
+
+    .hero-content p {
+        font-size: 1.3rem;
+    }
+
+    /* Directory Controls - Desktop */
+    .directory-controls {
+        padding: 2rem 3rem;
+    }
+
+    /* Member Cards - Desktop */
+    .cards-container {
+        padding: 2rem 3rem;
+    }
+
+    .grid-view {
+        grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+        gap: 2rem;
+    }
+
+    .member-card {
+        padding: 2rem;
+    }
+
+    .member-image {
+        height: 220px;
+    }
+
+    /* Footer - Desktop */
+    footer {
+        padding: 3rem;
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 3rem;
+        text-align: left;
+    }
+
+    .development-info {
+        margin-top: 0;
+        padding-top: 0;
+        border-top: none;
+        border-left: 1px solid rgba(255,255,255,0.2);
+        padding-left: 3rem;
+        text-align: left;
+    }
+}
+
+/* Large Desktop (≥ 1200px) */
+@media only screen and (min-width: 1200px) {
+    .grid-view {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+}
