@@ -80,6 +80,14 @@
         display: none;
         height: 120px;
     }
+
+    .weather-grid {
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+
+    .events-card {
+        grid-column: auto;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -146,7 +154,7 @@
         display: none;
     }
 
-  
+
     footer {
         padding: 3rem;
     }
@@ -173,4 +181,5 @@
     .grid-view {
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     }
+
 }

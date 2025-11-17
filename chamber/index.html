@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Aistev Chamber - Connecting local businesses and fostering economic growth in our community">
+    <meta name="description"
+        content="Aistev Chamber - Connecting local businesses and fostering economic growth in our community">
     <meta name="author" content="Stephen Isiko">
     <title>Aistev Chambers</title>
-    
+
     <!-- Facebook Meta Tags -->
     <meta property="og:title" content="Aistev  Chamber - Business Directory">
     <meta property="og:description" content="Discover local businesses and networking opportunities in Timbuktu">
     <meta property="og:image" content="images/logo.svg">
     <meta property="og:url" content="https://aistev1.github.io/wdd231/chamber/directory.html">
-    
+
     <title>Business Directory - Timbuktu Chamber of Commerce</title>
-    
+
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    
+
     <!-- CSS -->
-     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/scripts.js" defer></script>
 </head>
+
 <body>
     <header>
         <div class="header-top">
@@ -51,11 +54,58 @@
     <main class="directory-main">
         <section class="hero-banner">
             <div class="hero-content">
-                <h2>Local Business Directory</h2>
-                <p>Discover the vibrant business community of Timbuktu</p>
+                <h2>Our Business Directory</h2>
+                <p>Discover the vibrant business community of Aistev</p>
             </div>
-            <a href="#" class="hero-btn">Get Started</a>
+            <a href="#" class="hero-btn">Join Now</a>
         </section>
+        <div>
+            <h2>Home</h2>
+        </div>
+        <section class="weather-section">
+            <div class="container">
+                <div class="weather-grid">
+                    <!-- Current Events -->
+                    <div class="events-card">
+                        <h2>Upcoming Events</h2>
+                        <div class="events-list">
+                            <div class="event-item">
+                                <h3>Business Networking Mixer</h3>
+                                <p class="event-date">June 15, 2023 | 5:30 PM - 7:30 PM</p>
+                                <p>Join us for an evening of networking with local business leaders.</p>
+                            </div>
+                            <div class="event-item">
+                                <h3>Economic Development Forum</h3>
+                                <p class="event-date">June 22, 2023 | 9:00 AM - 12:00 PM</p>
+                                <p>Discussing future economic opportunities in our region.</p>
+                            </div>
+                            <div class="event-item">
+                                <h3>Small Business Workshop</h3>
+                                <p class="event-date">June 29, 2023 | 2:00 PM - 4:00 PM</p>
+                                <p>Learn strategies for growing your small business.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Current Weather -->
+                    <div class="weather-card">
+                        <h2>Current Weather</h2>
+                        <div id="current-weather" class="weather-content">
+                            <div class="loading">Loading weather data...</div>
+                        </div>
+                    </div>
+
+                    <!-- Weather Forecast -->
+                    <div class="forecast-card">
+                        <h2>3-Day Forecast</h2>
+                        <div id="weather-forecast" class="forecast-content">
+                            <div class="loading">Loading forecast...</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
         <section class="directory-controls">
             <div class="controls-container">
@@ -101,6 +151,7 @@
         </div>
     </footer>
 
-    
+
 </body>
+
 </html>
