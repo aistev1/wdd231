@@ -113,8 +113,8 @@ document.addEventListener('error', (event) => {
 
 // Weather API Configuration
     const WEATHER_API_KEY = '080909663a832aab4c32585250af0328'; // You'll need to get this from OpenWeatherMap
-    const CITY = 'Jinja'; // Replace with your actual city
-    const COUNTRY_CODE = 'UG'; // Replace with your country code
+    const CITY = 'London'; // Replace with your actual city
+    const COUNTRY_CODE = 'UK'; // Replace with your country code
 
     // DOM Elements
     const currentWeatherEl = document.getElementById('current-weather');
