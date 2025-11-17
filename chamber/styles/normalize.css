@@ -749,3 +749,9 @@ a:focus {
     grid-column: 1 / -1;
 }
 
+/* Hide directory sections only on home page */
+.home-page .directory-controls,
+.home-page .cards-container {
+    display: none;
+}
+
