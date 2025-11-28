@@ -772,9 +772,6 @@ a:focus {
     display: none;
 }
 
-
-
-
         form {
             display: grid;
             gap: 1.2rem;
@@ -805,13 +802,7 @@ a:focus {
             display: grid;
             gap: 1rem;
         }
-
-        @media(min-width: 800px) {
-            main {
-                grid-template-columns: 2fr 1fr;
-            }
-        }
-
+        
         .card {
             padding: 1rem;
             border-radius: 10px;

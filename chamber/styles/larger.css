@@ -88,6 +88,10 @@
     .events-card {
         grid-column: auto;
     }
+
+    main {
+        grid-template-columns: 2fr 1fr;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -174,12 +178,22 @@
         padding-left: 3rem;
         text-align: left;
     }
-     .spotlights-container {
+
+    .spotlights-container {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
     .spotlight-details {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .main-content-here {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .our-cards-her {
+        padding-top: 20px;
     }
 }
 
@@ -187,6 +201,15 @@
 @media only screen and (min-width: 1200px) {
     .grid-view {
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+
+    .main-content-here {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .our-cards-her {
+        padding-top: 20px;
     }
 
 }
