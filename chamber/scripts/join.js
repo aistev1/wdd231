@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const timestampField = document.getElementById("timestamp");
     if (timestampField) {
         timestampField.value = new Date().toISOString();
-        console.log("Timestamp set to:", timestampField.value); // For debugging
     }
     
     // Update footer information
@@ -25,4 +24,22 @@ document.addEventListener("DOMContentLoaded", () => {
     if (lastModified) {
         lastModified.textContent = document.lastModified;
     }
+    
+    // Add event listeners for modal triggers
+    const modalTriggers = document.querySelectorAll('.modal-trigger');
+    modalTriggers.forEach(trigger => {
+        trigger.addEventListener('click', () => {
+            const modalId = trigger.getAttribute('data-modal');
+            openModal(modalId);
+        });
+    });
+    
+    // Add event listeners for modal close buttons
+    const modalCloses = document.querySelectorAll('.modal-close');
+    modalCloses.forEach(closeBtn => {
+        closeBtn.addEventListener('click', () => {
+            const modalId = closeBtn.getAttribute('data-modal');
+            closeModal(modalId);
+        });
+    });
 });
