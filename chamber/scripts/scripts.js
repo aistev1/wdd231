@@ -409,3 +409,28 @@ document.addEventListener('DOMContentLoaded', async () => {
     const spotlights = new MemberSpotlights();
     await spotlights.init();
 });
+// document.getElementById("timestamp").value = new Date().toISOString();
+
+//     function openModal(id) {
+//         document.getElementById(id).showModal();
+//     }
+//     function closeModal(id) {
+//         document.getElementById(id).close();
+//     }
+
+// const params = new URLSearchParams(window.location.search);
+
+// document.getElementById("fname").textContent = params.get("fname");
+// document.getElementById("lname").textContent = params.get("lname");
+// document.getElementById("email").textContent = params.get("email");
+// document.getElementById("phone").textContent = params.get("phone");
+// document.getElementById("organization").textContent = params.get("organization");
+// document.getElementById("timestamp").textContent = params.get("timestamp");
+// document.getElementById("orgTitle").textContent = params.get("orgTitle");
+
+// document.addEventListener("DOMContentLoaded", () => {
+//     const timestampField = document.getElementById("timestamp");
+//     if (timestampField) {
+//         timestampField.value = new Date().toISOString();
+//     }
+// });
