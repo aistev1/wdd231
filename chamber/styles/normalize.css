@@ -844,3 +844,145 @@ a:focus {
             margin-top: 1rem;
             padding: .6rem 1rem;
         }
+
+/* 
+Discover Page */
+
+
+
+.visitor-message {
+    background: linear-gradient(135deg, var(--accent-color), var(--secondary-color));
+    color: var(--white);
+    padding: 1rem 1.5rem;
+    border-radius: var(--border-radius);
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: var(--shadow);
+}
+
+#closeMessage {
+    background: none;
+    border: none;
+    color: var(--white);
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Attractions Section */
+.attractions-section h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+/* Mobile Grid Layout (320px - 640px) */
+.attractions-grid {
+    display: grid;
+    grid-template-areas: 
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8";
+    gap: 2rem;
+}
+
+.attraction-card {
+    background: var(--white);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+.attraction-card:hover {
+    transform: translateY(-5px);
+}
+
+.attraction-card h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.attraction-card figure {
+    margin: 1rem 0;
+}
+
+.attraction-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+}
+
+.attraction-card address {
+    font-style: normal;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.attraction-card p {
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.learn-more {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.learn-more:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Individual Card Grid Areas */
+.attraction-card[data-card="card1"] { grid-area: card1; }
+.attraction-card[data-card="card2"] { grid-area: card2; }
+.attraction-card[data-card="card3"] { grid-area: card3; }
+.attraction-card[data-card="card4"] { grid-area: card4; }
+.attraction-card[data-card="card5"] { grid-area: card5; }
+.attraction-card[data-card="card6"] { grid-area: card6; }
+.attraction-card[data-card="card7"] { grid-area: card7; }
+.attraction-card[data-card="card8"] { grid-area: card8; }
+
