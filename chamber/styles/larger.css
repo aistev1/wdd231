@@ -92,6 +92,16 @@
     main {
         grid-template-columns: 2fr 1fr;
     }
+     .attraction-card img {
+        transition: all 0.3s ease;
+    }
+    
+    .attraction-card img:hover {
+
+        filter: brightness(1.1) contrast(1.1);
+        transform: scale(1.05);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -195,6 +205,15 @@
     .our-cards-her {
         padding-top: 20px;
     }
+     .attraction-card img {
+        transition: all 0.3s ease;
+    }
+    
+    .attraction-card img:hover {
+        filter: brightness(1.1) contrast(1.1);
+        transform: scale(1.05);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    }
 }
 
 
@@ -210,6 +229,15 @@
 
     .our-cards-her {
         padding-top: 20px;
+    }
+     .attraction-card img {
+        transition: all 0.3s ease;
+    }
+    
+    .attraction-card img:hover {
+        filter: brightness(1.1) contrast(1.1);
+        transform: scale(1.05);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.2);
     }
 
 }
