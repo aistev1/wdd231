@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PageTurner Community - A platform for book lovers to discover, exchange, and discuss books. Join our community of readers today!">
+    <meta name="author" content="Your Name">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="PageTurner Community | Book Exchange & Literary Hub">
+    <meta property="og:description" content="Discover, exchange, and discuss books with fellow readers.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourusername.github.io/wdd231/final-project">
+    <meta property="og:image" content="images/og-image.jpg">
+    
+    <title>PageTurner Community | Home</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Skip to Content Link for Accessibility -->
+        <a href="#main-content" class="skip-link">Skip to main content</a>
+        
+        <!-- Header -->
+        <header class="site-header">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html" aria-label="PageTurner Community Home">
+                        <i class="fas fa-book-open"></i>
+                        <span>PageTurner<span class="highlight">Community</span></span>
+                    </a>
+                </div>
+                
+                <!-- Navigation -->
+                <nav class="main-nav" aria-label="Main Navigation">
+                    <button class="hamburger" aria-label="Menu" aria-expanded="false">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                    
+                    <ul class="nav-menu">
+                        <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+                        <li><a href="catalog.html">Book Catalog</a></li>
+                        <li><a href="forum.html">Community Forum</a></li>
+                        <li><a href="forum.html#contribute" class="btn-primary">Contribute</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main id="main-content">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>Discover Your Next Favorite Book</h1>
+                    <p class="hero-subtitle">Join our community of readers to exchange, discuss, and discover amazing books.</p>
+                    <div class="hero-buttons">
+                        <a href="catalog.html" class="btn-primary">Browse Books</a>
+                        <a href="forum.html" class="btn-secondary">Join Discussion</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Books on a shelf" loading="lazy">
+                </div>
+            </section>
+
+            <!-- Featured Books Section -->
+            <section class="featured-section">
+                <h2>Featured This Month</h2>
+                <div class="books-grid" id="featured-books">
+                    <!-- Dynamic content from JavaScript -->
+                    <div class="loading">Loading featured books...</div>
+                </div>
+                <div class="section-footer">
+                    <a href="catalog.html" class="btn-secondary">View All Books <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </section>
+
+            <!-- Community Stats -->
+            <section class="stats-section">
+                <h2>Our Reading Community</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <i class="fas fa-book"></i>
+                        <div class="stat-number" id="total-books">0</div>
+                        <div class="stat-label">Books Available</div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-users"></i>
+                        <div class="stat-number" id="active-members">0</div>
+                        <div class="stat-label">Active Members</div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-exchange-alt"></i>
+                        <div class="stat-number" id="books-exchanged">0</div>
+                        <div class="stat-label">Books Exchanged</div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-comments"></i>
+                        <div class="stat-number" id="discussions">0</div>
+                        <div class="stat-label">Active Discussions</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Upcoming Events -->
+            <section class="events-section">
+                <h2>Upcoming Community Events</h2>
+                <div class="events-list">
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="event-day">15</span>
+                            <span class="event-month">Dec</span>
+                        </div>
+                        <div class="event-content">
+                            <h3>Virtual Book Club: Mystery Novels</h3>
+                            <p class="event-time"><i class="far fa-clock"></i> 7:00 PM EST</p>
+                            <p>Join us as we discuss the best mystery novels of 2023.</p>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="event-day">22</span>
+                            <span class="event-month">Dec</span>
+                        </div>
+                        <div class="event-content">
+                            <h3>Book Exchange Meetup</h3>
+                            <p class="event-time"><i class="far fa-clock"></i> 2:00 PM EST</p>
+                            <p>Bring books you've finished and find new ones to read!</p>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="event-day">05</span>
+                            <span class="event-month">Jan</span>
+                        </div>
+                        <div class="event-content">
+                            <h3>Author Q&A Session</h3>
+                            <p class="event-time"><i class="far fa-clock"></i> 6:30 PM EST</p>
+                            <p>Live session with bestselling author Jane Smith.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonial -->
+            <section class="testimonial-section">
+                <blockquote class="testimonial">
+                    <p>"PageTurner Community helped me discover books I never would have found on my own. The exchange system is fantastic!"</p>
+                    <cite>- Sarah M., Member since 2022</cite>
+                </blockquote>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PageTurner Community</h3>
+                    <p>Connecting readers through book exchange and discussion since 2020.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Goodreads"><i class="fab fa-goodreads"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="catalog.html">Book Catalog</a></li>
+                        <li><a href="forum.html">Community Forum</a></li>
+                        <li><a href="attributions.html">Attributions</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Project Video</h4>
+                    <p>Watch the project demonstration video:</p>
+                    <a href="https://youtu.be/your-video-id" class="video-link" target="_blank">
+                        <i class="fas fa-video"></i> View Demonstration
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2023</span> PageTurner Community. All rights reserved.</p>
+                <p>This website is a student project for WDD231.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript Modules -->
+    <script type="module" src="scripts/main.js"></script>
+</body>
+</html>

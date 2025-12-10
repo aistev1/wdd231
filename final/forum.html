@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join discussions, share reviews, and connect with fellow book lovers in the PageTurner Community forum.">
+    <meta name="author" content="Your Name">
+    <meta property="og:title" content="Community Forum | PageTurner Community">
+    
+    <title>Community Forum | PageTurner Community</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <a href="#main-content" class="skip-link">Skip to main content</a>
+        
+        <header class="site-header">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html" aria-label="PageTurner Community Home">
+                        <i class="fas fa-book-open"></i>
+                        <span>PageTurner<span class="highlight">Community</span></span>
+                    </a>
+                </div>
+                
+                <nav class="main-nav" aria-label="Main Navigation">
+                    <button class="hamburger" aria-label="Menu" aria-expanded="false">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                    
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="catalog.html">Book Catalog</a></li>
+                        <li><a href="forum.html" class="active" aria-current="page">Community Forum</a></li>
+                        <li><a href="#contribute" class="btn-primary">Contribute</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main id="main-content">
+            <!-- Forum Header -->
+            <section class="forum-header">
+                <h1>Community Forum</h1>
+                <p>Share thoughts, ask questions, and connect with fellow readers</p>
+            </section>
+
+            <div class="forum-layout">
+                <!-- Discussion Topics -->
+                <section class="discussion-topics">
+                    <h2>Popular Discussions</h2>
+                    
+                    <div class="topics-list">
+                        <article class="topic-card">
+                            <div class="topic-icon">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <div class="topic-content">
+                                <h3><a href="#">Best Mystery Novels of 2023</a></h3>
+                                <div class="topic-meta">
+                                    <span><i class="fas fa-user"></i> Sarah Johnson</span>
+                                    <span><i class="far fa-comment"></i> 42 replies</span>
+                                    <span><i class="far fa-clock"></i> 2 days ago</span>
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <article class="topic-card">
+                            <div class="topic-icon">
+                                <i class="fas fa-question-circle"></i>
+                            </div>
+                            <div class="topic-content">
+                                <h3><a href="#">Looking for Fantasy Recommendations</a></h3>
+                                <div class="topic-meta">
+                                    <span><i class="fas fa-user"></i> Michael Chen</span>
+                                    <span><i class="far fa-comment"></i> 28 replies</span>
+                                    <span><i class="far fa-clock"></i> 1 week ago</span>
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <article class="topic-card">
+                            <div class="topic-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="topic-content">
+                                <h3><a href="#">Monthly Book Club: December Pick</a></h3>
+                                <div class="topic-meta">
+                                    <span><i class="fas fa-user"></i> Book Club Admin</span>
+                                    <span><i class="far fa-comment"></i> 56 replies</span>
+                                    <span><i class="far fa-clock"></i> 3 weeks ago</span>
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <article class="topic-card">
+                            <div class="topic-icon">
+                                <i class="fas fa-exchange-alt"></i>
+                            </div>
+                            <div class="topic-content">
+                                <h3><a href="#">Successful Book Exchange Stories</a></h3>
+                                <div class="topic-meta">
+                                    <span><i class="fas fa-user"></i> Emily Rodriguez</span>
+                                    <span><i class="far fa-comment"></i> 31 replies</span>
+                                    <span><i class="far fa-clock"></i> 1 month ago</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- Recent Activity & User Panel -->
+                <aside class="forum-sidebar">
+                    <!-- User Preferences Panel -->
+                    <div class="user-panel" id="user-panel">
+                        <h3>Your Preferences</h3>
+                        <div class="preferences-form">
+                            <div class="form-group">
+                                <label for="fav-genre">Favorite Genre:</label>
+                                <select id="fav-genre" aria-label="Select favorite genre">
+                                    <option value="">Select genre</option>
+                                    <option value="fiction">Fiction</option>
+                                    <option value="fantasy">Fantasy</option>
+                                    <option value="scifi">Science Fiction</option>
+                                    <option value="mystery">Mystery</option>
+                                    <option value="biography">Biography</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="notifications">
+                                    <input type="checkbox" id="notifications"> 
+                                    Email notifications
+                                </label>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="theme">
+                                    <input type="checkbox" id="theme"> 
+                                    Dark theme
+                                </label>
+                            </div>
+                            
+                            <button id="save-preferences" class="btn-primary">Save Preferences</button>
+                            <p class="pref-status" id="pref-status"></p>
+                        </div>
+                    </div>
+
+                    <!-- Recent Activity -->
+                    <div class="activity-panel">
+                        <h3>Recent Activity</h3>
+                        <ul class="activity-list" id="activity-list">
+                            <!-- Dynamic content from JavaScript -->
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+
+            <!-- Contribution Form -->
+            <section id="contribute" class="contribution-section">
+                <h2>Suggest a Book</h2>
+                <p>Have a book you'd like to add to our exchange? Let us know!</p>
+                
+                <form id="book-suggestion-form" action="form-action.html" method="get">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="book-title">Book Title *</label>
+                            <input type="text" id="book-title" name="book-title" required 
+                                   aria-required="true" placeholder="Enter book title">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="book-author">Author *</label>
+                            <input type="text" id="book-author" name="book-author" required 
+                                   aria-required="true" placeholder="Enter author name">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="book-genre">Genre</label>
+                            <select id="book-genre" name="book-genre" aria-label="Select book genre">
+                                <option value="">Select genre</option>
+                                <option value="fiction">Fiction</option>
+                                <option value="nonfiction">Non-Fiction</option>
+                                <option value="fantasy">Fantasy</option>
+                                <option value="scifi">Science Fiction</option>
+                                <option value="mystery">Mystery</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="condition">Condition</label>
+                            <select id="condition" name="condition" aria-label="Select book condition">
+                                <option value="">Select condition</option>
+                                <option value="new">Like New</option>
+                                <option value="good">Good</option>
+                                <option value="fair">Fair</option>
+                                <option value="readable">Readable</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="suggest-reason">Why do you recommend this book?</label>
+                        <textarea id="suggest-reason" name="suggest-reason" 
+                                  rows="4" placeholder="Share why this book would be great for our community..."></textarea>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contributor-name">Your Name *</label>
+                            <input type="text" id="contributor-name" name="contributor-name" required 
+                                   aria-required="true" placeholder="Enter your name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contributor-email">Email *</label>
+                            <input type="email" id="contributor-email" name="contributor-email" required 
+                                   aria-required="true" placeholder="Enter your email">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="agree-terms">
+                            <input type="checkbox" id="agree-terms" name="agree-terms" required>
+                            I agree to the community guidelines
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary">Submit Suggestion</button>
+                    <button type="reset" class="btn-secondary">Reset Form</button>
+                </form>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <!-- Same footer as other pages -->
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PageTurner Community</h3>
+                    <p>Connecting readers through book exchange and discussion since 2020.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="catalog.html">Book Catalog</a></li>
+                        <li><a href="forum.html">Community Forum</a></li>
+                        <li><a href="attributions.html">Attributions</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Project Video</h4>
+                    <a href="https://youtu.be/your-video-id" class="video-link" target="_blank">
+                        <i class="fas fa-video"></i> View Demonstration
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2023</span> PageTurner Community. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script type="module" src="scripts/main.js"></script>
+</body>
+</html>

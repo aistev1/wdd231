@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse our extensive book catalog. Filter by genre, author, or availability. Find your next great read at PageTurner Community.">
+    <meta name="author" content="Your Name">
+    <meta property="og:title" content="Book Catalog | PageTurner Community">
+    <meta property="og:description" content="Browse hundreds of books available for exchange.">
+    
+    <title>Book Catalog | PageTurner Community</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <a href="#main-content" class="skip-link">Skip to main content</a>
+        
+        <header class="site-header">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html" aria-label="PageTurner Community Home">
+                        <i class="fas fa-book-open"></i>
+                        <span>PageTurner<span class="highlight">Community</span></span>
+                    </a>
+                </div>
+                
+                <nav class="main-nav" aria-label="Main Navigation">
+                    <button class="hamburger" aria-label="Menu" aria-expanded="false">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                    
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="catalog.html" class="active" aria-current="page">Book Catalog</a></li>
+                        <li><a href="forum.html">Community Forum</a></li>
+                        <li><a href="forum.html#contribute" class="btn-primary">Contribute</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main id="main-content">
+            <section class="catalog-header">
+                <h1>Book Catalog</h1>
+                <p>Browse our collection of available books for exchange</p>
+                
+                <!-- Search and Filter Controls -->
+                <div class="catalog-controls">
+                    <div class="search-box">
+                        <input type="text" id="search-input" placeholder="Search books or authors...">
+                        <button id="search-btn" aria-label="Search"><i class="fas fa-search"></i></button>
+                    </div>
+                    
+                    <div class="filter-controls">
+                        <select id="genre-filter" aria-label="Filter by genre">
+                            <option value="">All Genres</option>
+                            <option value="fiction">Fiction</option>
+                            <option value="nonfiction">Non-Fiction</option>
+                            <option value="fantasy">Fantasy</option>
+                            <option value="scifi">Science Fiction</option>
+                            <option value="mystery">Mystery</option>
+                            <option value="biography">Biography</option>
+                        </select>
+                        
+                        <select id="availability-filter" aria-label="Filter by availability">
+                            <option value="">All Books</option>
+                            <option value="available">Available Now</option>
+                            <option value="reserved">Reserved</option>
+                        </select>
+                        
+                        <button id="reset-filters" class="btn-secondary">Reset Filters</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Book Grid -->
+            <section class="catalog-section">
+                <div class="catalog-info">
+                    <p id="book-count">Loading books...</p>
+                    <div class="view-controls">
+                        <button id="grid-view" class="view-btn active" aria-label="Grid view">
+                            <i class="fas fa-th"></i>
+                        </button>
+                        <button id="list-view" class="view-btn" aria-label="List view">
+                            <i class="fas fa-list"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="books-grid catalog-view" id="book-catalog">
+                    <!-- Dynamic content from JavaScript -->
+                </div>
+                
+                <!-- Saved Books Section (Local Storage) -->
+                <div class="saved-books-section">
+                    <h3><i class="fas fa-bookmark"></i> Your Saved Books</h3>
+                    <div class="saved-books" id="saved-books">
+                        <p class="empty-message" id="empty-saved">No saved books yet. Click the bookmark icon on any book to save it!</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <!-- Same footer as index.html -->
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PageTurner Community</h3>
+                    <p>Connecting readers through book exchange and discussion since 2020.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="catalog.html">Book Catalog</a></li>
+                        <li><a href="forum.html">Community Forum</a></li>
+                        <li><a href="attributions.html">Attributions</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Project Video</h4>
+                    <a href="https://youtu.be/your-video-id" class="video-link" target="_blank">
+                        <i class="fas fa-video"></i> View Demonstration
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2023</span> PageTurner Community. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="book-modal" class="modal" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-content">
+            <button class="close-modal" aria-label="Close modal">&times;</button>
+            <div id="modal-content">
+                <!-- Dynamic content from JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="scripts/main.js"></script>
+</body>
+</html>
